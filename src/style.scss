@@ -4,15 +4,12 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: #fdfdfd;
-  color: #111;
-}
-
-.header {
-  padding: 2rem;
-  border-bottom: 1px solid #ddd;
+  background: #ffffff;
+  color: #000000;
 }
 
 header {
-    color: #ff002f
+    .sass-test{
+        color: #29903b
+    }
 }
