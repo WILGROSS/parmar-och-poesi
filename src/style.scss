@@ -124,16 +124,16 @@ header .sass-test {
     overflow: hidden;
     padding-bottom: 2rem;
     border-bottom: 1px solid #ccc;
+
+    img {
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
+  }
   }
 
   .event_text_image:last-child {
     border-bottom: none;
-  }
-
-  img {
-    width: 25%;
-    height: auto;
-    border-radius: 8px;
   }
 
   .event_text {
