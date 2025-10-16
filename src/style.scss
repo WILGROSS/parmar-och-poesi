@@ -13,3 +13,54 @@ header {
         color: #ff3131
     }
 }
+
+/*styling för Om oss-sidan*/
+.about_us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgb(245, 245, 245);
+  font-family: "Inter", sans-serif;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .about_text {
+    text-align: center;
+  
+
+  h1 {
+    color: #ff3131;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+}
+
+  .about_image {
+    margin: auto;
+  
+
+  img {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+   @media (min-width: 768px) {
+    .about_us {
+        max-width: 200vw;
+    }
+  }
+
+}
+}
