@@ -1,30 +1,132 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/style.scss">
-        <title>about-us</title>
-    </head>
-    <body>
-        <main class="about_us">
-            <section class="about_text">
-            <h1>Om oss</h1>
-            <p>Mitt i stadens brus finns en plats där tiden får sakta ner.
-Välkommen till <strong>Pärmar & Poesi</strong> – en bokhandel för dig som älskar ord, doften av papper och känslan av att bläddra i något verkligt.
+    <link rel="stylesheet" href="/src/style.scss" />
+    <link rel="stylesheet" href="/src/tailwind.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>about-us</title>
+  </head>
+  <body class="flex flex-col items-center">
+    <header class="bg-[#ff3131] w-full relative">
+      <nav
+        class="flex justify-between items-center md:items-baseline max-w-5xl mx-auto py-6 px-8"
+        aria-label="Main navigation"
+      >
+        <a
+          href="index.html"
+          class="p-2 rounded-md bg-white hover:bg-orange-50"
+          aria-label="Pärmar och Poesi startsida"
+        >
+          <img
+            src="assets/logo.png"
+            alt="Pärmar och Poesi logotyp"
+            class="max-w-20"
+          />
+        </a>
 
-Här hittar du noggrant utvalda böcker för alla sinnesstämningar – från klassiska romaner och samtida berättelser till vacker poesi och inspirerande facklitteratur. Vi tror på kvalitet framför kvantitet, och på den magi som bara uppstår när en bok verkligen hittar hem till rätt läsare.
+        <ul class="hidden md:flex flex-row gap-3 text-white text-xl font-bold">
+          <li>
+            <a
+              href="index.html"
+              class="hover:text-orange-50 hover:underline text-orange-100"
+              >Hem</a
+            >
+          </li>
+          <li>
+            <a href="böcker.html" class="hover:text-orange-50 hover:underline"
+              >Böcker</a
+            >
+          </li>
+          <li>
+            <a
+              href="evenemang.html"
+              class="hover:text-orange-50 hover:underline"
+              >Evenemang</a
+            >
+          </li>
+          <li>
+            <a href="poesi.html" class="hover:text-orange-50 hover:underline"
+              >Poesi</a
+            >
+          </li>
+        </ul>
 
-Hos oss är det alltid tillåtet att dröja sig kvar. Bläddra i hyllorna, slå dig ner med en kopp te och låt nästa favoritbok hitta dig. Vi älskar samtal om litteratur, tipsar gärna om läsupplevelser och delar din passion för det skrivna ordet.
+        <button
+          id="mobile-hamburger-menu-btn"
+          class="md:hidden text-4xl text-white"
+          aria-label="Öppna meny"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span
+            id="mobile-menu-icon"
+            class="material-symbols-outlined"
+            aria-hidden="true"
+            style="font-size: inherit"
+            >menu</span
+          >
+        </button>
+      </nav>
 
-Pärmar & Poesi är också en mötesplats – vi ordnar bokcirklar, poesikvällar och små kulturevenemang där berättelser och människor får mötas.
+      <ul
+        id="mobile-menu"
+        class="hidden flex-col gap-4 text-white text-xl font-bold bg-[#ff3131] p-6 absolute top-full left-0 w-full md:hidden shadow-lg"
+        aria-label="Mobilmeny"
+      >
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="böcker.html">Böcker</a></li>
+        <li><a href="evenemang.html">Evenemang</a></li>
+        <li><a href="poesi.html">Poesi</a></li>
+      </ul>
+    </header>
 
-Välkommen in till oss – där varje pärm döljer en värld och varje sida viskar en historia.</p>
-</section>
-<section class="about_image">
-<img src="/assets/bookstore.jpg" alt="En bild på bokhandeln från gatan">
-</section>
-        </main>
-    </body>
-    </html>
+    <main class="about_us">
+      <section class="about_text">
+        <h1>Om oss</h1>
+        <p>
+          Mitt i stadens brus finns en plats där tiden får sakta ner. Välkommen
+          till <strong>Pärmar & Poesi</strong> – en bokhandel för dig som älskar
+          ord, doften av papper och känslan av att bläddra i något verkligt. Här
+          hittar du noggrant utvalda böcker för alla sinnesstämningar – från
+          klassiska romaner och samtida berättelser till vacker poesi och
+          inspirerande facklitteratur. Vi tror på kvalitet framför kvantitet,
+          och på den magi som bara uppstår när en bok verkligen hittar hem till
+          rätt läsare. Hos oss är det alltid tillåtet att dröja sig kvar.
+          Bläddra i hyllorna, slå dig ner med en kopp te och låt nästa
+          favoritbok hitta dig. Vi älskar samtal om litteratur, tipsar gärna om
+          läsupplevelser och delar din passion för det skrivna ordet. Pärmar &
+          Poesi är också en mötesplats – vi ordnar bokcirklar, poesikvällar och
+          små kulturevenemang där berättelser och människor får mötas. Välkommen
+          in till oss – där varje pärm döljer en värld och varje sida viskar en
+          historia.
+        </p>
+      </section>
+      <section class="about_image">
+        <img
+          src="/assets/bookstore.jpg"
+          alt="En bild på bokhandeln från gatan"
+        />
+      </section>
+    </main>
+  </body>
+
+  <script>
+    const btn = document.getElementById("mobile-hamburger-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    const icon = document.getElementById("mobile-menu-icon");
+
+    btn.addEventListener("click", () => {
+      const isOpen = menu.classList.toggle("hidden");
+      const expanded = !isOpen;
+      btn.setAttribute("aria-expanded", expanded);
+      icon.textContent = expanded ? "close" : "menu";
+      btn.setAttribute("aria-label", expanded ? "Stäng meny" : "Öppna meny");
+    });
+  </script>
+</html>
