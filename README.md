@@ -1,4 +1,4 @@
-### Pärmar & Poesi
+# 📚 Pärmar & Poesi din lokala bokhandel
 
 ## Om oss
 Välkommen till *Pärmar & Poesi* – en bokhandel för dig som älskar ord, doften av papper och känslan av att bläddra i något verkligt.
