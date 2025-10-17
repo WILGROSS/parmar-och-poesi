@@ -79,6 +79,78 @@ header .sass-test {
 
 }
 }
+/* Grundlayout */
+.book-gallery {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fafafa;
+}
+
+.book-gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Grid för böckerna */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Varje bokruta */
+.book-item {
+  width: 220px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.book-item:hover {
+  transform: translateY(-5px);
+}
+
+.book-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*  Texten under bilden */
+figcaption {
+  padding: 1rem;
+}
+
+figcaption h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+figcaption p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/*  Läs mer-knapp */
+.read-more {
+  background-color: #808080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.read-more:hover {
+  background-color: #808080;
+}
 
 //*styling för evenemang sidan*/
 .event {
