@@ -5,7 +5,7 @@ Vårt mål är att skapa en plats – både digitalt och fysiskt – där ord, p
 
 ## 🌸 Projektbeskrivning
 Detta repo innehåller koden för **Pärmar & Poesi Bokhandelns webbplats**, byggd med fokus på:
-- Tillgänlighets anpassning (Vi böt ut rosa mot blå med tanke på de som är färgblinda)
+- Tillgänlighets anpassning (Vi böt ut rosa mot blå i logotypen med tanke på de som är färgblinda)
 - Responsiv design
 - Anpassad för både mobila och desktop enheter
 
@@ -15,6 +15,7 @@ Detta repo innehåller koden för **Pärmar & Poesi Bokhandelns webbplats**, byg
 - Tailwind CSS
 - Sass
 - Semantisk HTML
+- Javascript
 
 **Övrigt:**
 - SEO-optimering
