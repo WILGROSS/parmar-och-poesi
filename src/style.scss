@@ -379,19 +379,21 @@ figcaption p {
     }
 
 // styling för search bar */
-.search-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border: 1px solid gray;
-  border-radius: 2rem;
-  margin-top: 1rem;
-  width: 50%;
-  background-color: #fff7f7;
-  padding-left: 1rem;
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    width: 50%;
+    background-color: #fff7f7;
+    padding-left: 1rem;
 
-  @media (min-width: 768px) {
-      justify-content:flex-start;
-      gap: 0.5rem;
+    @media (min-width: 768px) {
+        justify-content:flex-start;
+        gap: 0.5rem;
+    }
   }
+}
 }
