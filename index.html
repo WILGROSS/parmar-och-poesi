@@ -12,7 +12,7 @@
     />
     <title>Pärmar och Poesi</title>
 
-    <!--Favicon-->
+<!--Favicon-->
     <link
       rel="icon"
       type="image/png"
@@ -44,6 +44,7 @@
           />
         </a>
 
+<!--Menyval sidor-->        
         <ul class="hidden md:flex flex-row gap-3 text-white text-xl font-bold">
           <li>
             <a
@@ -70,7 +71,7 @@
             >
           </li>
         </ul>
-
+<!--hamburgermeny-->
         <button
           id="mobile-hamburger-menu-btn"
           class="md:hidden text-4xl text-white"
@@ -88,6 +89,7 @@
         </button>
       </nav>
 
+<!--Mobilmeny-->      
       <ul
         id="mobile-menu"
         class="hidden flex-col gap-4 text-white text-xl font-bold bg-[#ff3131] p-6 absolute top-full left-0 w-full md:hidden shadow-lg"
@@ -100,18 +102,96 @@
       </ul>
     </header>
 
+<!--Böcker-->
+<section class="book-gallery">
+  <h2>Våra boktips</h2>
+
+  <div class="book-list">
+    <figure class="book-item">
+      <a href="assets/book-subtleart.png">
+        <img src="assets/book-subtleart.png" alt="The Subtle Art of Not Giving a F*ck bokomslag">
+      </a>
+      <figcaption>
+        <h3>The Subtle Art of Not Giving a F*ck</h3>
+        <p>En humoristisk men insiktsfull bok om att fokusera på det som verkligen betyder något i livet.</p>
+        <button class="read-more">Läs mer</button>
+      </figcaption>
+    </figure>
+
+    <figure class="book-item">
+      <a href="assets/book-old.png">
+        <img src="assets/book-old.png" alt="The Old Man and the Sea bokomslag">
+      </a>
+      <figcaption>
+        <h3>The Old Man and the Sea</h3>
+        <p>Hemingways klassiker om kamp, mod och ensamhet – en berättelse som stannar kvar länge.</p>
+        <button class="read-more">Läs mer</button>
+      </figcaption>
+    </figure>
+
+    <figure class="book-item">
+      <a href="assets/book-narnia.png">
+        <img src="assets/book-narnia.png" alt="Narnia bokomslag">
+      </a>
+      <figcaption>
+        <h3>The Chronicles of Narnia</h3>
+        <p>En magisk fantasyserie där barn kliver in i en värld fylld av äventyr och moralisk visdom.</p>
+        <button class="read-more">Läs mer</button>
+      </figcaption>
+    </figure>
+
+    <figure class="book-item">
+      <a href="assets/book-howinnovationworks.png">
+        <img src="assets/book-howinnovationworks.png" alt="How Innovation Works bokomslag">
+      </a>
+      <figcaption>
+        <h3>How Innovation Works</h3>
+        <p>Matt Ridley utforskar hur mänsklig kreativitet och samarbete driver världen framåt.</p>
+        <button class="read-more">Läs mer</button>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+</div>
+
+<!--Yta under Böcker-->
     <main class="bg-white">
       <section>
         <div id="cover-text">
           <h2>Pärmar och Poesi</h2>
-          <h3>Er lokala bokhandel på nätet</h3>
-          <h2>
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
-          </h2>
+          <h3>Er lokala bokhandel på nätet.</h3>
+          <h4>
+            <p>Välkomna till Pärmar och Poesi! Vi är en lokal bokhandel som befinner oss i Stockholm.</p>
+            <p>Hos oss är du välkommen att delta i evenemang, högläsning och fika.</p>
+            <p>Våra öppettider är vardagar 10-19 och helger 11-17</p>
+            <section class="store-location">
+
+<!--Karta-->
+  <h2>Här hittar du oss</h2>
+
+  <address>
+    <p>Bokhandeln Pärmar & Poesi</p>
+    <p>Drottninggatan 12</p>
+    <p>111 51 Stockholm</p>
+  </address>
+
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.0283442036074!2d18.0649!3d59.3326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5b1a1a1a1a%3A0x123456789abcdef!2sDrottninggatan%2012%2C%20Stockholm!5e0!3m2!1ssv!2sse!4v1700000000000"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+          </h4>
         </div>
       </section>
 
-      <!-- Denna section ska fixas till senare, la till för att inte glömma (Andrea) -->
+<!-- Denna section ska fixas till senare, la till för att inte glömma (Andrea) -->
       <section>
         <a href="/about-us.html">Om oss</a>
       </section>
@@ -143,6 +223,7 @@
     </footer>
   </body>
 
+<!--Mobilmeny-->
   <script>
     const btn = document.getElementById("mobile-hamburger-menu-btn");
     const menu = document.getElementById("mobile-menu");
