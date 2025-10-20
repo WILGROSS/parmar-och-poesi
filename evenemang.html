@@ -160,19 +160,19 @@
         </ul>
       </div>
     </footer>
+    
+    <script>
+      const btn = document.getElementById("mobile-hamburger-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      const icon = document.getElementById("mobile-menu-icon");
+
+      btn.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("hidden");
+        const expanded = !isOpen;
+        btn.setAttribute("aria-expanded", expanded);
+        icon.textContent = expanded ? "close" : "menu";
+        btn.setAttribute("aria-label", expanded ? "Stäng meny" : "Öppna meny");
+      });
+    </script>
   </body>
-
-  <script>
-    const btn = document.getElementById("mobile-hamburger-menu-btn");
-    const menu = document.getElementById("mobile-menu");
-    const icon = document.getElementById("mobile-menu-icon");
-
-    btn.addEventListener("click", () => {
-      const isOpen = menu.classList.toggle("hidden");
-      const expanded = !isOpen;
-      btn.setAttribute("aria-expanded", expanded);
-      icon.textContent = expanded ? "close" : "menu";
-      btn.setAttribute("aria-label", expanded ? "Stäng meny" : "Öppna meny");
-    });
-  </script>
 </html>
