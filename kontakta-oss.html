@@ -1,56 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>min sass-sidan!</title>
-    <link rel="stylesheet" href="../sass/style.css">
-</head>
-<body>
-<main>
-<h1><button>Kontakta oss</button>
-</h1>
-</main>
+    <link rel="stylesheet" href="/src/style.scss" />
+    <link rel="stylesheet" href="/src/tailwind.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-[#ff3131] w-full relative">
+      <nav
+        class="flex justify-between items-center md:items-baseline max-w-7xl mx-auto py-6 px-4 md:px-8"
+        aria-label="Main navigation"
+      >
+        <a href="index.html" aria-label="Pärmar och Poesi startsida">
+          <img
+            src="assets/logo_alt.png"
+            alt="Pärmar och Poesi logotyp"
+            class="max-w-20 md:max-w-30"
+          />
+        </a>
 
-<section>
-<table>
- <tr>
-<th>Bokhandel</th>
-<th>Telefon</th>
-<th> E-pos</th>
-<th>Adress</th>
-</tr>
-<tr>
-    <td>Malin Johan</td>
-    <td>0501‑100 66</td>
-    <td>kontakt@karstroms.se</td>
-    <td>Östergatan 13, 542 30 Maristad </td>
+        <ul class="hidden md:flex flex-row gap-3 text-white text-xl font-bold">
+          <li>
+            <a
+              href="index.html"
+              class="hover:text-orange-50 hover:underline text-white"
+              >Hem</a
+            >
+          </li>
+          <li>
+            <a href="böcker.html" class="hover:text-orange-50 hover:underline"
+              >Böcker</a
+            >
+          </li>
+          <li>
+            <a
+              href="evenemang.html"
+              class="hover:text-orange-50 hover:underline"
+              >Evenemang</a
+            >
+          </li>
+          <li>
+            <a href="poesi.html" class="hover:text-orange-50 hover:underline"
+              >Poesi</a
+            >
+          </li>
+          <li>
+            <a href="about-us.html" class="hover:text-orange-50 hover:underline"
+              >Om oss</a
+            >
+          </li>
+        </ul>
 
-<tr>
-    <td>Frida kalsson</td>
-    <td>0481‑10033</td>
-    <td>info@bohmansbokhandel.se</td>
-    <td>Storgatan 13, 382 30 Nybro</td>
-</tr>
-<tr>
- <td>Sara Benjamin</td>
- <td>0431‑700 000</td>
- <td>infamations@info.se</td>
- <td>Storgatan 21, 456 30 Järvala</td>
-</tr>
-<tr>
-<td>Meja Martin</td>
-<td>0431‑700 000</td>
-<td>infamations@inf.com</td>
-<td>Storgatan 22, 456 30 Tunnbo</td>
-</tr>
-<tr>
-<td>Tara Tulbon</td> 
-<td>0481‑10033</td>
-<td>infamations@info.se</td>
-<td>Östergatan 2,345 32</td>
-  </tr>
-</table>
-</section>
-</body>
+        <button
+          id="mobile-hamburger-menu-btn"
+          class="md:hidden text-4xl text-white"
+          aria-label="Öppna meny"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span
+            id="mobile-menu-icon"
+            class="material-symbols-outlined"
+            aria-hidden="true"
+            style="font-size: inherit"
+            >menu</span
+          >
+        </button>
+      </nav>
+
+      <ul
+        id="mobile-menu"
+        class="hidden flex-col gap-4 text-white text-xl font-bold bg-[#ff3131] p-6 absolute top-full left-0 w-full md:hidden shadow-lg"
+        aria-label="Mobilmeny"
+      >
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="böcker.html">Böcker</a></li>
+        <li><a href="evenemang.html">Evenemang</a></li>
+        <li><a href="poesi.html">Poesi</a></li>
+        <li><a href="about-us.html">Om oss</a></li>
+      </ul>
+    </header>
+    <main class="contact flex flex-col items-center min-h-screen">
+      <h1><button>Kontakta oss</button></h1>
+
+      <section>
+        <table>
+          <tr>
+            <th>Bokhandel</th>
+            <th>Telefon</th>
+            <th>E-post</th>
+            <th>Adress</th>
+          </tr>
+          <tr>
+            <td>Malin Johan</td>
+            <td>0501-100 66</td>
+            <td>kontakt@karstroms.se</td>
+            <td>Östergatan 13, 542 30 Maristad</td>
+          </tr>
+
+          <tr>
+            <td>Frida kalsson</td>
+            <td>0481-10033</td>
+            <td>info@bohmansbokhandel.se</td>
+            <td>Storgatan 13, 382 30 Nybro</td>
+          </tr>
+          <tr>
+            <td>Sara Benjamin</td>
+            <td>0431-700 000</td>
+            <td>infamations@info.se</td>
+            <td>Storgatan 21, 456 30 Järvala</td>
+          </tr>
+          <tr>
+            <td>Meja Martin</td>
+            <td>0431-700 000</td>
+            <td>infamations@inf.com</td>
+            <td>Storgatan 22, 456 30 Tunnbo</td>
+          </tr>
+          <tr>
+            <td>Tara Tulbon</td>
+            <td>0481-10033</td>
+            <td>infamations@info.se</td>
+            <td>Östergatan 2,345 32</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer class="bg-[#ff3131] w-full">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto py-6 px-4 md:px-8 text-white font-bold"
+        aria-label="Footer links"
+      >
+        <ul>
+          <li><a href="about-us.html" class="hover:underline">Om oss</a></li>
+          <li>
+            <a href="kontakta-oss.html" class="hover:underline">Kontakt</a>
+          </li>
+          <li><a href="#" class="hover:underline">Support</a></li>
+        </ul>
+        <address class="not-italic">
+          <ul>
+            <li>Pärmar & Poesi</li>
+            <li>Hornsbruksgatan 25</li>
+            <li>117 34, Stockholm</li>
+          </ul>
+        </address>
+        <ul>
+          <li>08-508 308 60</li>
+          <li>
+            <a href="mailto:info@parmarochpoesi.se" class="hover:underline"
+              >info@parmarochpoesi.se</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li><a href="#" class="hover:underline">Integritetspolicy</a></li>
+          <li><a href="#" class="hover:underline">Anpassa cookies</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      const btn = document.getElementById("mobile-hamburger-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+      const icon = document.getElementById("mobile-menu-icon");
+
+      btn.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("hidden");
+        const expanded = !isOpen;
+        btn.setAttribute("aria-expanded", expanded);
+        icon.textContent = expanded ? "close" : "menu";
+        btn.setAttribute("aria-label", expanded ? "Stäng meny" : "Öppna meny");
+      });
+    </script>
+  </body>
 </html>

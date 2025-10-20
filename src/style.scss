@@ -160,7 +160,6 @@ figcaption p {
   gap: 2rem;
 }
 
-
 .event {
   display: flex;
   flex-direction: column;
@@ -185,14 +184,14 @@ figcaption p {
 }
 
 .event a:hover {
-  background-color: #fff7f7;;
+  background-color: #fff7f7;
 }
 
 @media (min-width: 768px) {
-.layout {
-  grid-template-columns: 3fr 1fr;
-  align-items: start;
-}
+  .layout {
+    grid-template-columns: 3fr 1fr;
+    align-items: start;
+  }
 
   .event_text_image {
     display: flex;
@@ -251,8 +250,6 @@ figcaption p {
 .calender li strong {
   color: #ff3131;
 }
-
-
 
 .poetry {
   h2 {
@@ -378,88 +375,78 @@ figcaption p {
       height: 250px;
     }
 
-/* styling för search bar */
-  .search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 1px solid gray;
-    border-radius: 2rem;
-    margin-top: 1rem;
-    width: 50%;
-    background-color: #fff7f7;
-    padding-left: 1rem;
+    /* styling för search bar */
+    .search-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: 1px solid gray;
+      border-radius: 2rem;
+      margin-top: 1rem;
+      width: 50%;
+      background-color: #fff7f7;
+      padding-left: 1rem;
 
-    @media (min-width: 768px) {
-        justify-content:flex-start;
+      @media (min-width: 768px) {
+        justify-content: flex-start;
         gap: 0.5rem;
+      }
     }
   }
-}
-}
-
-/*
-========================================
-Maryams styling (avkommenterad tillfälligt)
-========================================
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 // nesting
-section {
-  table {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
+.contact {
+  section {
+    table {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
 
-  td,
-  th {
-    border: 1px solid white;
-    padding: 6px;
-  }
+    td,
+    th {
+      border: 1px solid white;
+      padding: 6px;
+    }
 
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
 
-  tr:hover {
-    background-color: #ddd;
-  }
+    tr:hover {
+      background-color: #ddd;
+    }
 
-  th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #04AA6D;
-    color: white;
-  }
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04aa6d;
+      color: white;
+    }
 
-  // variabler
-  $primary-color: rgba(11, 219, 11, 0.884);
-  $button-text: black;
-
-  // Stil för h1 med knapp inuti
-  h1 {
-    text-align: left;
-    margin-top: 100px;
-
+    // variabler
     $primary-color: rgba(11, 219, 11, 0.884);
-    $font-stack: Arial, sans-serif;
+    $button-text: black;
 
-    button {
-      background-color: $primary-color;
-      color: $button-text;
-      padding: 6px 12px;
-      border-radius: 5px;
-      font-size: 1.5rem;
-      margin-bottom: 100vh;
-      cursor: pointer;
+    // Stil för h1 med knapp inuti
+    h1 {
+      text-align: left;
+      margin-top: 100px;
+
+      $primary-color: rgba(11, 219, 11, 0.884);
+      $font-stack: Arial, sans-serif;
+
+      button {
+        background-color: $primary-color;
+        color: $button-text;
+        padding: 6px 12px;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        margin-bottom: 100vh;
+        cursor: pointer;
+      }
     }
   }
 }
-*/
