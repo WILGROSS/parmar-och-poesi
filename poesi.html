@@ -14,18 +14,17 @@
   <body class="flex flex-col items-center">
     <header class="bg-[#ff3131] w-full relative">
       <nav
-        class="flex justify-between items-center md:items-baseline max-w-5xl mx-auto py-6 px-8"
+        class="flex justify-between items-center md:items-baseline max-w-7xl mx-auto py-6 px-4 md:px-8"
         aria-label="Main navigation"
       >
         <a
           href="index.html"
-          class="p-2 rounded-md bg-white hover:bg-orange-50"
           aria-label="Pärmar och Poesi startsida"
         >
           <img
-            src="assets/logo.png"
+            src="assets/logo_alt.png"
             alt="Pärmar och Poesi logotyp"
-            class="max-w-20"
+            class="max-w-20 md:max-w-30"
           />
         </a>
 
@@ -84,6 +83,118 @@
         <li><a href="poesi.html">Poesi</a></li>
       </ul>
     </header>
+
+    <main class="flex flex-col items-center gap-12 mb-12 poetry">
+        <h1>Poesi</h1>
+        <article class="flex flex-col md:flex-row gap-4 md:justify-between">
+            <figure class="mx-8 rounded-lg overflow-hidden max-w-sm">
+                <img src="assets/karin-boye.webp" alt="A black and white profile photograph of Karin Boye">
+            </figure>
+            <section class="flex flex-col items-center">
+                <h2 class="text-center">
+                    Hur kan jag säga...<br>Karin Boye, 1941
+                </h2>
+                <p class="text-lg text-center">
+                    Hur kan jag säga om din röst är vacker.<br>
+                    Jag vet ju bara att den genomtränger mig<br>
+                    och kommer mig att darra som ett löv<br>
+                    Och trasar sönder mig och spränger mig.<br><br>
+                    Vad vet jag om din hud och dina lemmar.<br>
+                    Det bara skakar mig att de är dina,<br>
+                    så att för mig finns ingen sömn och vila,<br>
+                    tills de är mina.
+                </p>
+            </section>
+        </article>
+        <hr class="my-8 border-t-2 border-[#ff3131] border-solid w-full">
+        <article class="flex flex-col-reverse md:flex-row gap-4 md:justify-between">
+            <section class="flex flex-col items-center">
+                <h2 class="text-center">
+                    Tired<br>Langston Hughes, 1931
+                </h2>
+                <p class="text-lg text-center">
+                    I am so tired of waiting.<br>
+                    Aren't you,<br>
+                    For the world to become good<br>
+                    And beautiful and kind?<br><br>
+                    Let us take a knife<br>
+                    And cut the world in two -<br>
+                    And see what worms are eating<br>
+                    At the rind.
+                </p>
+            </section>
+            <figure class="mx-8 rounded-xl overflow-hidden max-w-sm">
+                <img src="assets/langston-hughes.jpg" alt="A black and white photograph of Langston Hughes by his typewriter." class="w-auto h-full">
+            </figure>
+        </article>
+        <hr class="my-8 border-t-2 border-[#ff3131] border-solid w-full">
+        <article class="flex flex-col md:flex-row gap-4 md:justify-between">
+            <figure class="mx-8 rounded-lg overflow-hidden max-w-sm">
+                <img src="assets/gwendolyn-brooks.webp" alt="A black and white portrait of Gwendolyn Brooks, smiling at the camera.">
+            </figure>
+            <section class="flex flex-col items-center">
+                <h2 class="text-center">
+                    We real cool<br>Gwendolyn Brooks, 1960
+                </h2>
+                <p class="text-lg text-center">
+                    We real cool. We<br>
+                    Left school. We<br><br>
+                    Lurk late. We<br>
+                    Strike straight. We<br><br>
+                    Sing sin. We<br>
+                    Thin gin. We<br><br>
+                    Jazz June. We<br>
+                    Die soon.
+                </p>
+            </section>
+        </article>
+        <hr class="my-8 border-t-2 border-[#ff3131] border-solid w-full">
+        <article class="flex flex-col-reverse md:flex-row gap-4 md:justify-between">
+            <section class="flex flex-col items-center poetry">
+                <h2 class="text-center">
+                   Nothing Gold Can Stay<br>Robert Frost, 1923
+                </h2>
+                <p class="text-lg text-center">
+                    Nature's first green is gold,<br>
+                    Her hardest hue to hold.<br><br>
+                    Her early leaf's a flower;<br>
+                    But only so an hour.<br><br>
+                    Then leaf subsides to leaf.<br>
+                    So Eden sank to grief,<br><br>
+                    So dawn goes down to day.<br>
+                    Nothing gold can stay
+                </p>
+            </section>
+            <figure class="mx-8 rounded-lg overflow-hidden max-w-sm">
+                <img src="assets/robert-frost.jpg" alt="A black and white profile photograph of Robert Frost.">
+            </figure>
+        </article>
+    </main>
+
+    <footer class="bg-[#ff3131] w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto py-6 px-4 md:px-8 text-white font-bold"
+        aria-label="Footer links">
+        <ul>
+          <li><a href="about-us.html" class="hover:underline">Om oss</a></li>
+          <li><a href="#" class="hover:underline">Support</a></li>
+        </ul>
+        <address class="not-italic">
+            <ul>
+                <li>Pärmar & Poesi</li>
+                <li>Hornsbruksgatan 25</li>
+                <li>117 34, Stockholm</li>
+            </ul>
+        </address>
+        <ul>
+          <li>08-508 308 60</li>
+          <li><a href="mailto:info@parmarochpoesi.se" class="hover:underline">info@parmarochpoesi.se</a></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="hover:underline">Integritetspolicy</a></li>
+          <li><a href="#" class="hover:underline">Anpassa cookies</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 
   <script>

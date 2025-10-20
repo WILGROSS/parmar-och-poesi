@@ -1,12 +1,25 @@
-# 📚 Pärmar & Poesi din lokala bokhandel
+# 📚 Pärmar & Poesi bokhandel
 
-## Om oss
-Välkommen till *Pärmar & Poesi* – en bokhandel för dig som älskar ord, doften av papper och känslan av att bläddra i något verkligt.
+**Pärmar & Poesi** är en oberoende bokhandel som förenar litteratur, estetik och gemenskap.  
+Vårt mål är att skapa en plats – både digitalt och fysiskt – där ord, poesi och passion möts.
 
-Här hittar du noggrant utvalda böcker för alla sinnesstämningar – från klassiska romaner och samtida berättelser till vacker poesi och inspirerande facklitteratur. Vi tror på kvalitet framför kvantitet, och på den magi som bara uppstår när en bok verkligen hittar hem till rätt läsare.
+## 🌸 Projektbeskrivning
+Detta repo innehåller koden för **Pärmar & Poesi Bokhandelns webbplats**, byggd med fokus på:
+- Tillgänlighets anpassning (Vi böt ut rosa mot blå med tanke på de som är färgblinda)
+- Responsiv design
+- Anpassad för både mobila och desktop enheter
 
-Hos oss är det alltid tillåtet att dröja sig kvar. Bläddra i hyllorna, slå dig ner med en kopp te och låt nästa favoritbok hitta dig. Vi älskar samtal om litteratur, tipsar gärna om läsupplevelser och delar din passion för det skrivna ordet.
+## 🛠️ Tech stack
 
-Pärmar & Poesi är också en mötesplats – vi ordnar bokcirklar, poesikvällar och små kulturevenemang där berättelser och människor får mötas.
+**Frontend:**
+- Tailwind CSS
+- Sass
+- Semantisk HTML
 
-Välkommen in till oss – där varje pärm döljer en värld och varje sida viskar en historia.
+**Övrigt:**
+- SEO-optimering
+- Responsiv design
+
+## 🧭 Struktur
+- *Sidstruktur* (Hem, Böcker, Evenemang, Poesi, Om oss)
+- *Layout* (Header, main, footer)
