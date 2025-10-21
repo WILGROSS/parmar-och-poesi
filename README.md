@@ -25,9 +25,15 @@ Detta repo innehåller koden för **Pärmar & Poesi Bokhandelns webbplats**, byg
 - *Sidstruktur* (Hem, Böcker, Evenemang, Poesi, Om oss)
 - *Layout* (Header, main, footer)
 
-## 🤝 Contributors
-<a href="https://github.com/WILGROSS/parmar-och-poesi/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=WILGROSS/parmar-och-poesi" />
+## 👥 Authors
+<a href="https://github.com/teddylindstrom">
+<img src="https://github.com/teddylindstrom.png?size=150" alt="GitHub profilbild" style="border-radius:50%; width:80px;" />
+</a>
+<a href="https://github.com/avega89-0407">
+<img src="https://github.com/avega89-0407.png?size=150" alt="GitHub profilbild" style="border-radius:50%; width:80px;" />
+</a>
+<a href="https://github.com/wilgross">
+<img src="https://github.com/wilgross.png?size=150" alt="GitHub profilbild" style="border-radius:50%; width:80px;" />
 </a>
 
 ## 🌐 Installation
