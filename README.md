@@ -24,3 +24,14 @@ Detta repo innehåller koden för **Pärmar & Poesi Bokhandelns webbplats**, byg
 ## 🧭 Struktur
 - *Sidstruktur* (Hem, Böcker, Evenemang, Poesi, Om oss)
 - *Layout* (Header, main, footer)
+
+## 🤝 Contributors
+<a href="https://github.com/WILGROSS/parmar-och-poesi/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=WILGROSS/parmar-och-poesi" />
+</a>
+
+## 🌐 Installation
+1. Clone repository:
+
+ ```bash
+   git clone https://github.com/WILGROSS/parmar-och-poesi.git
