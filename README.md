@@ -25,7 +25,7 @@ Detta repo innehåller koden för **Pärmar & Poesi Bokhandelns webbplats**, byg
 - *Sidstruktur* (Hem, Böcker, Evenemang, Poesi, Om oss)
 - *Layout* (Header, main, footer)
 
-## 👥 Authors
+## 👥 Teammedlemmar
 <a href="https://github.com/teddylindstrom">
 <img src="https://github.com/teddylindstrom.png?size=150" alt="GitHub profilbild" style="border-radius:50%; width:80px;" />
 </a>
@@ -34,7 +34,8 @@ Detta repo innehåller koden för **Pärmar & Poesi Bokhandelns webbplats**, byg
 </a>
 <a href="https://github.com/wilgross">
 <img src="https://github.com/wilgross.png?size=150" alt="GitHub profilbild" style="border-radius:50%; width:80px;" />
-</a>
+</a><br><br>
+Vi arbetade tillsammans med att designa, utveckla och dokumentera projektet via GitHub.
 
 ## 🌐 Installation
 1. Clone repository:
