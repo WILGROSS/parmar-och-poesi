@@ -64,6 +64,7 @@ header .sass-test {
 
     p {
       line-height: 1.5;
+      color: #333;
     }
   }
 
@@ -173,6 +174,10 @@ figcaption p {
   color: #ff3131;
 }
 
+.event_text p {
+  color: #333;
+}
+
 .event a {
   padding: 0.5rem 1rem;
   border: 0.5px solid gray;
@@ -183,7 +188,7 @@ figcaption p {
 }
 
 .event a:hover {
-  background-color: #fff7f7;
+  background-color: #fafafa;
 }
 
 @media (min-width: 768px) {
@@ -204,7 +209,7 @@ figcaption p {
     margin: 1rem;
     overflow: hidden;
     padding-bottom: 2rem;
-    border-bottom: 2px solid #ff3131;
+    border-bottom: 2px solid #f3f3f3;
 
     img {
       width: 30%;
@@ -222,19 +227,21 @@ figcaption p {
   }
 
   .calender {
-    border-left: 2px solid #ff3131;
+    border-left: 2px solid #f3f3f3;
     padding-left: 1rem;
     margin-top: 2rem;
   }
 }
 
 .calender {
-  background-color: #fff7f7;
+  display: grid;
+  gap: 1rem;
   padding: 1rem;
 }
 
 .calender h2 {
   color: #ff3131;
+  text-align: center;
 }
 
 .calender ul {
@@ -242,12 +249,35 @@ figcaption p {
 }
 
 .calender li {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(126, 126, 126, 0.1);
   margin-bottom: 0.75rem;
   line-height: 1.4;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.calender li:hover {
+  transform: translateY(-3px);
+}
+
+.calender li::before {
+  font-size: 1.3rem;
+  margin-right: 0.75rem;
 }
 
 .calender li strong {
+  display: block;
   color: #ff3131;
+  font-weight: 600;
+}
+
+.calender li span {
+  color: #444;
+  font-size: 0.9rem;
 }
 
 .poetry {
@@ -441,11 +471,16 @@ figcaption p {
   border-radius: 2rem;
   margin-top: 1rem;
   width: 50%;
-  background-color: #fff7f7;
+  background-color: #f3f3f3;
   padding-left: 1rem;
 
   @media (min-width: 768px) {
     justify-content: flex-start;
     gap: 0.5rem;
   }
+
+  input {
+    outline: none;
+  }
+  
 }
