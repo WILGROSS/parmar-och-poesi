@@ -7,6 +7,10 @@ body {
   line-height: 1.5;
 }
 
+$primary-color: rgba(11, 219, 11, 0.884);
+$button-text: black;
+$font-stack: Arial, sans-serif;
+
 /* Lite default styling */
 h1,
 h2,
@@ -403,41 +407,55 @@ figcaption p {
     .map-container iframe {
       height: 250px;
     }
-
+  }
     // nesting
-    .contact {
-      section {
-        table {
-          font-family: Arial, Helvetica, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
-        }
+    
+.contact {
+  section {
+    table {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
 
-        td,
-        th {
-          border: 1px solid white;
-          padding: 6px;
-        }
+    td,
+    th {
+      border: 1px solid white;
+      padding: 6px;
+    }
 
-        tr:nth-child(even) {
-          background-color: #f2f2f2;
-        }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
 
-        tr:hover {
-          background-color: #ddd;
-        }
+    tr:hover {
+      background-color: #ddd;
+    }
 
-        th {
-          padding-top: 12px;
-          padding-bottom: 12px;
-          text-align: left;
-          background-color: #04aa6d;
-          color: white;
-        }
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04aa6d;
+      color: white;
+    }
 
-        // variabler
-        $primary-color: rgba(11, 219, 11, 0.884);
-        $button-text: black;
+    h1 {
+      text-align: left;
+      margin-top: 100px;
+
+      button {
+        background-color: rgba(11, 219, 11, 0.884);
+        color: black;
+        padding: 6px 12px;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 
         // Stil för h1 med knapp inuti
         h1 {
@@ -447,7 +465,7 @@ figcaption p {
           $primary-color: rgba(11, 219, 11, 0.884);
           $font-stack: Arial, sans-serif;
 
-          button {
+      button {
             background-color: $primary-color;
             color: $button-text;
             padding: 6px 12px;
@@ -458,9 +476,7 @@ figcaption p {
           }
         }
       }
-    }  
-  }
-}
+
 
 /* styling för search bar */
 .search-bar {
