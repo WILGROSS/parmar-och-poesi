@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/style.scss" />
-    <link rel="stylesheet" href="/src/tailwind.css" />
+    <link rel="stylesheet" href="src/tailwind.css">
+    <link rel="stylesheet" href="src/style.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -12,7 +12,7 @@
     <title>Pärmar och Poesi</title>
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   </head>
-  <body class="flex flex-col items-center">
+  <body>
     <header class="bg-[#ff3131] w-full relative">
       <nav
         class="flex justify-between items-center md:items-baseline max-w-7xl mx-auto py-6 px-4 md:px-8"
@@ -42,7 +42,7 @@
           <li>
             <a
               href="evenemang.html"
-              class="hover:text-orange-50 underline hover:underline"
+              class="hover:text-orange-50 hover:underline"
               >Evenemang</a
             >
           </li>
@@ -87,92 +87,51 @@
         <li><a href="about-us.html">Om oss</a></li>
       </ul>
     </header>
-    <main class="event">
-      <span class="layout">
-        <section class="event_innehall">
-        <section class="event_rubrik">
-          <h1>Kommande evenemang</h1>
-        </section>
-        <section class="event_text_image">
-          <img
-            src="/assets/bookclub.jpg"
-            alt="Två personer som sitter i en soffa och läser bok tillsammans"
-          />
-          <article class="event_text">
-            <h4>Bokcirkel träffar</h4>
-            <p>
-              Vi läser, diskuterar och upptäcker nya perspektiv tillsammans.
-              Oavsett om du är en bokslukare eller nyfiken nybörjare är du
-              välkommen att dela dina tankar i en varm och öppen gemenskap.
-              Varje onsdag kl 18:00-20:00!
-            </p>
-            <a href="#">Läs mer</a>
-          </article>
-        </section>
-        <section class="event_text_image">
-          <img src="/assets/poem.jpg" alt="En bok med en kopp kaffe bredvid" />
-          <article class="event_text">
-            <h4>Poesikvällar</h4>
-            <p>
-              En kväll fylld av ord, känslor och rytm. Lyssna till poeter som
-              delar sina verk – eller ta mod till dig och läs något eget! En
-              stund för eftertanke, gemenskap och kreativitet. Varje torsdag kl
-              18:00-20:00!
-            </p>
-            <a href="#">Läs mer</a>
-          </article>
-        </section>
-        <article class="event_text_image">
-          <img
-            src="/assets/bookreading.jpg"
-            alt="Två personer som sitter mitt emot varandra och har ett samtal om en bok"
-          />
-          <article class="event_text">
-            <h4>Författarsamtal</h4>
-            <p>
-              Möt aktuella författare och få en inblick i deras skrivprocess,
-              tankar och berättelser. Ett samtal mellan läsare och skapare – där
-              ord blir till möten.
-            </p>
-            <a href="#">Läs mer</a>
-          </article>
-        </article>
-        <section class="event_text_image">
-          <img
-            src="/assets/workshop.jpg"
-            alt="Flera personer sitter på stolar riktat mot en person som håller i en workshop"
-          />
-          <article class="event_text">
-            <h4>Workshops i skrivande</h4>
-            <p>
-              Vill du utveckla ditt skrivande? Våra workshops erbjuder
-              inspiration, praktiska övningar och personlig feedback. Utforska
-              din röst och hitta nya sätt att uttrycka dig. Varje måndag kl
-              17:00-18:00!
-            </p>
-            <a href="#">Läs mer</a>
-          </article>
-        </section>
-        </section>
-        
-        <aside class="calender">
-          <h2>Kalendarium</h2>
-          <ul>
-            <li><strong>Ons 23/10 18:00-20:00</strong> – Bokcirkel träffar</li>
-            <li><strong>Tor 24/10 18:00-20:00</strong> – Poesikvällar</li>
-            <li>
-              <strong>Mån 28/10 17:00-18:00</strong> – Workshops i skrivande
-            </li>
-            <li><strong>Ons 30/10 18:00-20:00</strong> – Bokcirkel träffar</li>
-            <li><strong>Tor 31/10 18:00-20:00</strong> – Poesikvällar</li>
-            <li>
-              <strong>Mån 4/11 17:00-18:00</strong> – Workshops i skrivande
-            </li>
-          </ul>
-        </aside>
-      </span>
+    <main class="contact flex flex-col items-center min-h-screen">
+      <h1><button>Kontakta oss</button></h1>
+
+      <section>
+        <table>
+          <tr>
+            <th>Bokhandel</th>
+            <th>Telefon</th>
+            <th>E-post</th>
+            <th>Adress</th>
+          </tr>
+          <tr>
+            <td>Malin Johan</td>
+            <td>0501-100 66</td>
+            <td>kontakt@karstroms.se</td>
+            <td>Östergatan 13, 542 30 Maristad</td>
+          </tr>
+
+          <tr>
+            <td>Frida Karlsson</td>
+            <td>0481-10033</td>
+            <td>fornamn@books.se</td>
+            <td>Storgatan 13, 382 30 Nybro</td>
+          </tr>
+          <tr>
+            <td>Sara Benjamin</td>
+            <td>0431-700 000</td>
+            <td>fornamn@books.se</td>
+            <td>Storgatan 21, 456 30 Järvala</td>
+          </tr>
+          <tr>
+            <td>Meja Martin</td>
+            <td>0431-700 000</td>
+            <td>fornamn@books.se</td>
+            <td>Storgatan 22, 456 30 Tunnbo</td>
+          </tr>
+          <tr>
+            <td>Tara Tulbon</td>
+            <td>0481-10033</td>
+            <td>fornamn@books.se</td>
+            <td>Östergatan 2,345 32</td>
+          </tr>
+        </table>
+      </section>
     </main>
-   
     <footer class="bg-[#ff3131] w-full">
       <div
         class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto py-6 px-4 md:px-8 text-white font-bold"
@@ -206,7 +165,6 @@
         </ul>
       </div>
     </footer>
-
     <script>
       const btn = document.getElementById("mobile-hamburger-menu-btn");
       const menu = document.getElementById("mobile-menu");

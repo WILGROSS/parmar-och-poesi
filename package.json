@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass": "sass --watch src/style.scss:src/style.css --style=expanded --source-map"
   },
+
   "devDependencies": {
     "sass": "^1.93.2",
     "vite": "^7.1.7"
@@ -15,5 +17,18 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
     "tailwindcss": "^4.1.14"
-  }
+  },
+  "description": "**Pärmar & Poesi** är en oberoende bokhandel som förenar litteratur, estetik och gemenskap.   Vårt mål är att skapa en plats – både digitalt och fysiskt – där ord, poesi och passion möts.",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WILGROSS/parmar-och-poesi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WILGROSS/parmar-och-poesi/issues"
+  },
+  "homepage": "https://github.com/WILGROSS/parmar-och-poesi#readme"
 }
