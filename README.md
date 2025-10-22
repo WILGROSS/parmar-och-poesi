@@ -37,6 +37,12 @@ Detta repo innehåller koden för **Pärmar & Poesi Bokhandelns webbplats**, byg
 </a><br><br>
 Vi arbetade tillsammans med att designa, utveckla och dokumentera projektet via GitHub.
 
+## 💻 Validering och test
+**Vi har använt dessa sidor för att göra en validering och test på webbplatsen:**
+- https://caniuse.com/
+- https://validator.w3.org/
+- https://jigsaw.w3.org/css-validator/
+
 ## 🌐 Installation
 1. Clone repository:
 
