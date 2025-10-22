@@ -48,3 +48,7 @@ Vi arbetade tillsammans med att designa, utveckla och dokumentera projektet via 
 
  ```bash
    git clone https://github.com/WILGROSS/parmar-och-poesi.git
+   
+   npm install
+
+   npm run dev
