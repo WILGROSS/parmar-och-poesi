@@ -1,5 +1,4 @@
-@use "sass:color";
-
+@charset "UTF-8";
 body {
   font-family: "Inter", sans-serif;
   color: #000000;
@@ -23,9 +22,11 @@ h6 {
 h1 {
   font-size: 2.5rem;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.5rem;
 }
@@ -49,38 +50,35 @@ header .sass-test {
   padding: 2rem;
   background-color: rgb(245, 245, 245);
   font-family: "Inter", sans-serif;
-
-  @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
+  .about_us {
     flex-direction: row;
     gap: 2rem;
   }
-
-  .about_text {
-    text-align: center;
-
-    h1 {
-      color: #ff3131;
-      margin-bottom: 2rem;
-    }
-
-    p {
-      line-height: 1.5;
-      white-space: pre-wrap;
-    }
-  }
-
-  .about_image img {
+}
+.about_us .about_text {
+  text-align: center;
+}
+.about_us .about_text h1 {
+  color: #ff3131;
+  margin-bottom: 2rem;
+}
+.about_us .about_text p {
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+.about_us .about_image img {
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .about_us .about_image img .about_us {
     max-width: 100%;
-    height: auto;
-    padding: 1rem;
-
-    @media (min-width: 768px) {
-      .about_us {
-        max-width: 100%;
-      }
-    }
   }
 }
+
 /* Grundlayout */
 .book-gallery {
   text-align: center;
@@ -154,7 +152,6 @@ figcaption p {
   background-color: #808080;
 }
 
-//*styling för evenemang sidan*/
 .event {
   display: flex;
   flex-direction: column;
@@ -191,107 +188,81 @@ figcaption p {
     align-items: flex-start;
     gap: 2rem;
   }
-
   .event_text_image {
     display: flex;
     margin: 1rem;
     overflow: hidden;
     padding-bottom: 2rem;
     border-bottom: 1px solid #ccc;
-
-    img {
-      width: 25%;
-      height: auto;
-      border-radius: 8px;
-    }
   }
-
+  .event_text_image img {
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
+  }
   .event_text_image:last-child {
     border-bottom: none;
   }
-
   .event_text {
     margin-left: 1rem;
   }
-
 }
-.poetry {
-  h2 {
-    font-size: 1.5rem;
-  }
+.poetry h2 {
+  font-size: 1.5rem;
 }
-
-
-// styling för contact.html
 
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-// mixin
-@mixin primary { 
-
+section table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
-  
-// nesting 
-  section table {
-        font-family: Arial, Helvetica, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-    }
 
-    td,
-    th {
-        border: 1px solid white;
-        padding: 6px;
-    }
+td,
+th {
+  border: 1px solid white;
+  padding: 6px;
+}
 
-    tr:nth-child(even) {
-        background-color: whitesmoke;
-    }
+tr:nth-child(even) {
+  background-color: whitesmoke;
+}
 
-    tr:hover {
-        background-color: white;
-    }
+tr:hover {
+  background-color: white;
+}
 
-    th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: rgb(4, 170, 109);
-        color: white;
-    }
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(4, 170, 109);
+  color: white;
+}
 
-    // variabler
-    $primary-color: rgba(11, 219, 11, 0.884);
-   $button-text: black ;
-
-// Stil för h1 med knapp inuti
 h1 {
-  margin-bottom: 1,5 row;
+  text-align: center;
+  margin-top: 100px;
+  padding: 10px 12;
+  display: inline-block;
   background-color: whitesmoke;
   color: red;
-  
-
-
-    $primary-color: rgba(11, 219, 11, 0.884);
-    $font-stack: Arial, sans-serif;
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    background-color: lightgreen;
-  }
-  
-
-
-    button { background-color: $primary-color;
-color: $button-text;
-padding: 6px 12px;
-border-radius: 5px;
-font-size: 1,5rem;
-margin-bottom: 100vh;
-cursor: pointer;
-    }
-  }
+  border-radius: 6px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+h1 button {
+  background-color: rgba(11, 219, 11, 0.884);
+  color: black;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 1, 5rem;
+  margin-bottom: 100vh;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
