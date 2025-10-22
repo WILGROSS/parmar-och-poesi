@@ -290,146 +290,145 @@ figcaption p {
   }
 }
 
-
 // styling för contact.html
 
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 // mixin
-@mixin primary { 
-
-}
-  
-// nesting 
-  section table {
-        font-family: Arial, Helvetica, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-/*  Styling för startsidan / Pärmar och Poesi  */
-
-.intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: #ffffff;
-
-  #cover-text {
-    max-width: 800px;
-
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: #333;
-    }
-
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      color: #555;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #444;
-      margin-bottom: 1rem;
-    }
-  }
+@mixin primary {
 }
 
-/* Karta och adress */
-.store-location {
-  margin-top: 2rem;
-  background-color: #fafafa;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+// nesting
+section table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  /*  Styling för startsidan / Pärmar och Poesi  */
 
-  h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    color: #222;
-  }
-
-  address {
-    font-style: normal;
-    color: #555;
-    margin-bottom: 1.5rem;
-  }
-
-  .map-container {
-    iframe {
-      width: 100%;
-      height: 400px;
-      border: 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-  }
-}
-
-/* Responsiv design (mobil & surfplatta)  */
-@media (max-width: 768px) {
   .intro {
-    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
 
     #cover-text {
+      max-width: 800px;
+
       h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        color: #333;
       }
 
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: #555;
       }
 
       p {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #444;
+        margin-bottom: 1rem;
       }
     }
   }
 
+  /* Karta och adress */
   .store-location {
-    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: #fafafa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
     h2 {
-      font-size: 1.3rem;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #222;
     }
 
-    .map-container iframe {
-      height: 300px;
+    address {
+      font-style: normal;
+      color: #555;
+      margin-bottom: 1.5rem;
     }
+
+    .map-container {
+      iframe {
+        width: 100%;
+        height: 400px;
+        border: 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  /* Responsiv design (mobil & surfplatta)  */
+  @media (max-width: 768px) {
+    .intro {
+      padding: 2rem 1rem;
+
+      #cover-text {
+        h2 {
+          font-size: 2rem;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .store-location {
+      padding: 1.5rem;
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      .map-container iframe {
+        height: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .intro {
+      padding: 1rem;
+
+      #cover-text {
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        h3 {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .store-location {
+      .map-container iframe {
+        height: 250px;
+      }
+    }
+    // nesting
   }
 }
 
-@media (max-width: 480px) {
-  .intro {
-    padding: 1rem;
-
-    #cover-text {
-      h2 {
-        font-size: 1.6rem;
-      }
-
-      h3 {
-        font-size: 1rem;
-      }
-    }
-  }
-
-  .store-location {
-    .map-container iframe {
-      height: 250px;
-    }
-  }
-    // nesting
-    
 .contact {
   section {
     table {
@@ -440,113 +439,83 @@ body {
 
     td,
     th {
-        border: 1px solid white;
-        padding: 6px;
-    }
-
-    tr:nth-child(even) {
-        background-color: whitesmoke;
-    }
-
-    tr:hover {
-        background-color: white;
-    }
-
-    th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: rgb(4, 170, 109);
-        color: white;
-    }
-
-    // variabler
-    $primary-color: rgba(11, 219, 11, 0.884);
-   $button-text: black ;
-
-// Stil för h1 med knapp inuti
-h1 {
-  margin-bottom: 1,5 row;
-  background-color: whitesmoke;
-  color: red;
-  
-
-
-    $primary-color: rgba(11, 219, 11, 0.884);
-    $font-stack: Arial, sans-serif;
-
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    background-color: lightgreen;
-  }
-  
-
-
-    button { background-color: $primary-color;
-color: $button-text;
-padding: 6px 12px;
-border-radius: 5px;
-font-size: 1,5rem;
-margin-bottom: 100vh;
-cursor: pointer;
-    }
-  }
       border: 1px solid white;
       padding: 6px;
     }
 
     tr:nth-child(even) {
-      background-color: #f2f2f2;
+      background-color: whitesmoke;
     }
 
     tr:hover {
-      background-color: #ddd;
+      background-color: white;
     }
 
     th {
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
-      background-color: #04aa6d;
+      background-color: rgb(4, 170, 109);
       color: white;
     }
 
+    // variabler
+    $primary-color: rgba(11, 219, 11, 0.884);
+    $button-text: black;
+
+    // Stil för h1
     h1 {
-      text-align: left;
-      margin-top: 100px;
+      margin-bottom: 1, 5 row;
+      background-color: whitesmoke;
+      color: red;
+
+      $primary-color: rgba(11, 219, 11, 0.884);
+      $font-stack: Arial, sans-serif;
+
+      @media screen and (min-width: 480px) and (max-width: 768px) {
+        background-color: lightgreen;
+      }
 
       button {
-        background-color: rgba(11, 219, 11, 0.884);
-        color: black;
+        background-color: $primary-color;
+        color: white;
         padding: 6px 12px;
         border-radius: 5px;
-        font-size: 1.5rem;
+        font-size: 1, 5rem;
+        margin-bottom: 100vh;
         cursor: pointer;
       }
     }
+    border: 1px solid white;
+    padding: 6px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #ddd;
+  }
+
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+  }
+
+  h1 {
+    text-align: left;
+    margin-top: 100px;
+    background-color: rgba(11, 219, 11, 0.884);
+    color: black;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 1.5rem;
   }
 }
-
-
-        // Stil för h1 med knapp inuti
-        h1 {
-          text-align: left;
-          margin-top: 100px;
-
-          $primary-color: rgba(11, 219, 11, 0.884);
-          $font-stack: Arial, sans-serif;
-
-      button {
-            background-color: $primary-color;
-            color: $button-text;
-            padding: 6px 12px;
-            border-radius: 5px;
-            font-size: 1.5rem;
-            margin-bottom: 100vh;
-            cursor: pointer;
-          }
-        }
-      }
-
 
 /* styling för search bar */
 .search-bar {
@@ -568,5 +537,4 @@ cursor: pointer;
   input {
     outline: none;
   }
-  
 }
